@@ -408,7 +408,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel \
+    hardware/google/pixelstats \
+    hardware/google/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client
 
