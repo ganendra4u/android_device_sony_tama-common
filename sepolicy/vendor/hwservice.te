@@ -7,3 +7,6 @@ type hal_secd_hwservice, hwservice_manager_type;
 type hal_somc_camera_hwservice, hwservice_manager_type;
 type hal_somc_radio_hwservice, hwservice_manager_type;
 type hal_swiqi_hwservice, hwservice_manager_type;
+type hal_perf_hwservice, hwservice_manager_type;
+type hal_cacert_hwservice, hwservice_manager_type;
+type hal_datafactory_hwservice, hwservice_manager_type;
