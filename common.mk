@@ -371,6 +371,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
+    libperfmgr_prebuilt \
     android.hardware.power@1.3.vendor \
     libqti-perfd-client
 
@@ -503,4 +504,3 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
 
-PRODUCT_COPY_FILES += $(COMMON_PATH)/prebuilt/libperfmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfmgr.so

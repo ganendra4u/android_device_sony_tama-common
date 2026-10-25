@@ -10,5 +10,6 @@ ap(){
 ap frameworks/native frameworks_native.patch
 ap system/memory/libmeminfo system_memory_libmeminfo.patch
 ap vendor/sony/tama-common vendor_sony_tama-common.patch
-mkdir -p "$T/hardware/interfaces/light"
-[ -d "$T/hardware/interfaces/light/2.0" ] || { cp -r "$P/hardware_interfaces_light_2.0" "$T/hardware/interfaces/light/2.0" && echo "dipasang: light/2.0"; }
+if [ ! -d "$T/hardware/interfaces/light/2.0" ]; then
+  mkdir -p "$T/hardware/interfaces/light" && tar -xzf "$P/hardware_interfaces_light_2.0.tar.gz" -C "$T/hardware/interfaces/light" && echo "dipasang: light/2.0"
+fi
