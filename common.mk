@@ -371,6 +371,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
+    libperfmgr \
     android.hardware.power@1.3.vendor \
     libqti-perfd-client
 
