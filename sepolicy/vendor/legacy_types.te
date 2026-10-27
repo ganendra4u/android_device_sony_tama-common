@@ -12,3 +12,6 @@ vendor_internal_prop(qcom_ims_prop)
 type thermal-engine, domain;
 type thermal-engine_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(thermal-engine)
+type sysfs_ssr_toggle,  sysfs_type, fs_type;
+type sysfs_mmc_host, fs_type, sysfs_type;
+type hal_capabilityconfigstore_qti_default, domain;

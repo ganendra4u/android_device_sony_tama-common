@@ -361,6 +361,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1.vendor \
+    android.hardware.nfc@1.1-service.cxd22xx \
     com.android.nfc_extras \
     Tag
 
@@ -504,3 +505,14 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_virtual_display_dimension=4096
 
+
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/etc/libnfc-cxd22xx.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd22xx.conf
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/etc/libnfc-cxd-224x02010010.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-224x02010010.conf
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/etc/libnfc-cxd-224x02310011.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-cxd-224x02310011.conf
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/etc/nfc_settings.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc_settings.conf
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/etc/init/android.hardware.nfc@1.1-service.cxd22xx.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.1-service.cxd22xx.rc
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/firmware/cxd224x_firmware_ES1.1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd224x_firmware_ES1.1.bin
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/vendor/firmware/cxd224x_firmware_ES1.0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cxd224x_firmware_ES1.0.bin
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/system/etc/felica/common.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/felica/common.cfg
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/system/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/felica/mfm.cfg
+PRODUCT_COPY_FILES += device/sony/tama-common/nfc/system/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_SYSTEM)/etc/felica/mfs.cfg

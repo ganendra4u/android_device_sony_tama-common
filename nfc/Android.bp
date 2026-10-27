@@ -1,0 +1,11 @@
+cc_prebuilt_binary {
+    name: "android.hardware.nfc@1.1-service.cxd22xx",
+    srcs: ["vendor/bin/hw/android.hardware.nfc@1.1-service.cxd22xx"],
+    vendor: true,
+    relative_install_path: "hw",
+    compile_multilib: "64",
+    check_elf_files: false,
+    strip: {
+        none: true,
+    },
+}
