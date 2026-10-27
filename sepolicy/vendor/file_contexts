@@ -56,7 +56,7 @@
 
 # PERSIST
 /mnt/vendor/persist/credmgr/credmgr2.db     u:object_r:persist_credmgr_file:s0
-/mnt/vendor/persist/wlan(/.*)?              u:object_r:persist_wlan_file:s0
+#/mnt/vendor/persist/wlan(/.*)?              u:object_r:persist_wlan_file:s0
 /mnt/vendor/persist/pc(/.*)?                u:object_r:simpin_cache_data_file:s0
 /mnt/vendor/persist/credmgr(/.*)?           u:object_r:persist_credmgr_file:s0
 /mnt/vendor/persist/credmgr.db              u:object_r:persist_credmgr_file:s0
@@ -91,10 +91,10 @@
 
 # Vendor HALs
 /(vendor|system/vendor)/bin/hw/fpc_fingerprint@2\.1_HIDL-service		        u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.tama        u:object_r:hal_lineage_touch_default_exec:s0
+#/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.tama        u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.hardware\.secd@1\.0-service		u:object_r:hal_secd_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.semc\.system\.idd@1\.0-service    		u:object_r:hal_idd_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.camera\.provider@1\.0-service    u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.miscta@1\.0-service		u:object_r:hal_miscta_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.somc\.hardware\.modemswitcher@1\.0-service               u:object_r:hal_modemswitcher_default_exec:s0
-/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                       u:object_r:hal_neuralnetworks_default_exec:s0
+#/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                       u:object_r:hal_neuralnetworks_default_exec:s0

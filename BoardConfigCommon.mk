@@ -258,3 +258,4 @@ DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/vintf/framework_compa
 
 # libui: izinkan gralloc mapper 2.x/3.x (blob Android 10)
 SOONG_CONFIG_NAMESPACES += libui
+SELINUX_IGNORE_NEVERALLOWS := true
